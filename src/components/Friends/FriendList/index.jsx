@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {FriendListUl} from './FriendList.styled';
 import {FriendsListItem} from '../FriendListItem';
 

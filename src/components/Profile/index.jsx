@@ -1,14 +1,11 @@
-import React from 'react';
 
 import {
   ProfileCardDiv,
   DescriptionDiv,
   AvatarImg,
   NameP,
-  TagP,
-  LocationP,
-  StatsUl,
-  StatsLi,
+  TagP,  
+  StatsUl,  
   LabelSpan,
   QuantitySpan,
 } from './Profile.styled';
@@ -26,22 +23,22 @@ export const Profile = ({
         <AvatarImg src={avatar} alt="User avatar" />
         <NameP>{username}</NameP>
         <TagP>@{tag}</TagP>
-        <LocationP>{location}</LocationP>
+        <p>{location}</p>
       </DescriptionDiv>
 
       <StatsUl>
-        <StatsLi>
+        <li>
           <LabelSpan>Followers</LabelSpan>
           <QuantitySpan>{followers}</QuantitySpan>
-        </StatsLi>
-        <StatsLi>
+        </li>
+        <li>
           <LabelSpan>Views</LabelSpan>
           <QuantitySpan>{views}</QuantitySpan>
-        </StatsLi>
-        <StatsLi>
+        </li>
+        <li>
           <LabelSpan>Likes</LabelSpan>
           <QuantitySpan>{likes}</QuantitySpan>
-        </StatsLi>
+        </li>
       </StatsUl>
     </ProfileCardDiv>
   );

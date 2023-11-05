@@ -6,7 +6,10 @@ const ProfileCardDiv = styled.div`
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 
+  1px 1px 1px rgb(186, 190, 204),
+  -1px -1px 1px rgb(255, 255, 255);
+  
 `;
 
 const DescriptionDiv = styled.div`
@@ -23,36 +26,28 @@ const AvatarImg = styled.img`
   margin-right: 10px;
 `;
 
-const Reset = styled.p`
+const StyledP = styled.p`
   margin: 0;
   padding: 0;
-`;
-    
-const NameP = styled(Reset)`
-  font-size: 1.5em;
-  font-weight: bold;
   color: #777;
 `;
 
-const TagP = styled(Reset)`
+const NameP = styled(StyledP)`
+  font-size: 1.5em;
+  font-weight: bold; 
+`;
+
+const TagP = styled(StyledP)`
   margin-right: 10px;
-  color: #777;
   padding: 5px;
 `;
 
-const LocationP = styled(Reset)`
-  color: #777;
-`;
 
 const StatsUl = styled.ul`
   list-style-type: none;
   padding: 0;
   display: flex;
   justify-content: space-between;
-`;
-
-const StatsLi = styled.li`
-  text-align: center;
 `;
 
 const LabelSpan = styled.span`
@@ -72,10 +67,8 @@ export {
   DescriptionDiv,
   AvatarImg,
   NameP,
-  TagP,
-  LocationP,
-  StatsUl,
-  StatsLi,
+  TagP,  
+  StatsUl,  
   LabelSpan,
   QuantitySpan,
 };

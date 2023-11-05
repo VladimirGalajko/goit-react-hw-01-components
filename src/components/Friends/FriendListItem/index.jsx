@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {StatusSpan, ItemLi, AvatarImg, NameP } from './FriendListItem.styled';
 
 export const FriendsListItem = ({ avatar, name, isOnline }) => {

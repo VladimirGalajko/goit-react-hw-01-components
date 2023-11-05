@@ -1,4 +1,4 @@
-import React from 'react';
+
 import {
   TitleH2,
   StatisticsSection,

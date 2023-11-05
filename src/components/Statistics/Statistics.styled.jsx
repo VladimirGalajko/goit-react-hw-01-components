@@ -14,7 +14,9 @@ width: 360px;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 
+  1px 1px 1px rgb(186, 190, 204),
+  -1px -1px 1px rgb(255, 255, 255);
 `;
 
 const StatlistUl = styled.ul`
