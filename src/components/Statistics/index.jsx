@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   TitleH2,
   StatisticsSection,
@@ -24,3 +25,5 @@ export const Statistics = ({ title, stats }) => {
     </StatisticsSection>
   );
 };
+
+

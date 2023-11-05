@@ -1,3 +1,5 @@
+import React from 'react';
+
 import {
   FriendListUl,
   ItemLi,
@@ -21,4 +23,3 @@ export const Friends = ({friends}) => {
     </FriendListUl>
   );
 };
-

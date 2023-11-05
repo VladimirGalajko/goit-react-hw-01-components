@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getStatusColor} from './getStatusColor';
+// import { getStatusColor} from './getStatusColor';
 
 
 const FriendListUl = styled.ul`
@@ -24,7 +24,10 @@ const StatusSpan = styled.span`
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: ${props=>getStatusColor(props.isOnline)};
+  
+  background-color: ${props => {
+    return props.isOnline ? 'green' : 'red';
+  }};
   margin-right: 10px;
 `;
 const AvatarImg = styled.img`
